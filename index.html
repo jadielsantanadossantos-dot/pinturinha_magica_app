@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Abrindo o painel · Pinturinha Mágica</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#f7f1f7">
+    <script>window.location.replace('https://pinturinhamagica.shardweb.app/admin/login');</script>
+    <meta http-equiv="refresh" content="0; url=https://pinturinhamagica.shardweb.app/admin/login">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
+        html { -webkit-text-size-adjust: 100%; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: grid;
+            place-items: center;
+            padding: calc(24px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));
+            background:
+                radial-gradient(700px 400px at 90% 0%, rgba(255, 79, 151, .16), transparent 62%),
+                radial-gradient(600px 340px at 0% 100%, rgba(18, 184, 166, .15), transparent 62%),
+                #f7f1f7;
+            color: #2a2438;
+            font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 340px;
+        }
+
+        .mark {
+            display: grid;
+            place-items: center;
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 18px;
+            border-radius: 22px;
+            background: #fff;
+            box-shadow: 0 20px 40px -24px rgba(42, 36, 56, .5);
+            font-size: 1.9rem;
+        }
+
+        h1 {
+            margin: 0 0 4px;
+            font-size: 1.35rem;
+            letter-spacing: -.01em;
+        }
+
+        .brand span {
+            color: #e93a82;
+        }
+
+        p {
+            margin: 0 0 18px;
+            color: #5a5470;
+            font-size: .88rem;
+        }
+
+        .spinner {
+            width: 22px;
+            height: 22px;
+            margin: 0 auto 20px;
+            border: 3px solid rgba(255, 79, 151, .2);
+            border-top-color: #ff4f97;
+            border-radius: 50%;
+            animation: spin .8s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .link {
+            display: inline-block;
+            padding: 11px 18px;
+            border-radius: 11px;
+            background: linear-gradient(120deg, #ff4f97, #ff7ab3);
+            color: #fff;
+            font-size: .88rem;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 22px -14px rgba(233, 58, 130, .9);
+        }
+
+        .link:active { transform: translateY(1px); }
+
+        .hint {
+            margin-top: 14px;
+            color: #8a839c;
+            font-size: .72rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .spinner { animation-duration: 2s; }
+        }
+    </style>
+</head>
+<body>
+    <main class="box">
+        <div class="mark" aria-hidden="true">🎨</div>
+
+        <h1 class="brand">Pinturinha <span>Mágica</span></h1>
+        <p>Abrindo a área da artista…</p>
+
+        <div class="spinner" role="status" aria-label="Redirecionando"></div>
+
+        <a class="link" href="https://pinturinhamagica.shardweb.app/admin/login">Abrir o painel</a>
+        <p class="hint">Se a página não abrir sozinha, toque no botão acima.</p>
+    </main>
+</body>
+</html>
